@@ -10,9 +10,5 @@ export function strictEquals(x, y) {
     return true;
   }
 
-  if (Object.is(x, y)) {
-    return true;
-  }
-
-  return false;
+  return Object.is(x, y);
 }
